@@ -1,0 +1,17 @@
+START 
+   PROMPT user to enter student's score 
+   IF score is between 70 and 100 
+      PRINT "Grade: A" 
+   ELSE IF score is between 60 and 69 
+      PRINT "Grade: B" 
+   ELSE IF score is between 50 and 59 
+      PRINT "Grade: C" 
+   ELSE IF score is between 45 and 49 
+      PRINT "Grade: D" 
+   ELSE IF score is between 40 and 44 
+      PRINT "Grade: E" 
+   ELSE IF score is below 40 
+      PRINT "Grade: F" 
+   ELSE 
+      PRINT "Invalid score" 
+END
