@@ -1,15 +1,18 @@
-INPUT student_name, score
-IF score >= 70 AND score <= 100 THEN
-    grade = "A"
-ELSE IF score >= 60 AND score <= 69 THEN
-    grade = "B"
-ELSE IF score >= 50 AND score <= 59 THEN
-    grade = "C"
-ELSE IF score >= 45 AND score <= 49 THEN
-    grade = "D"
-ELSE IF score >= 40 AND score <= 44 THEN
-    grade = "E"
-ELSE IF score < 40 THEN
-    grade = "F"
-END IF
-PRINT student_name, score, grade
+# Get score from user
+score = float(input("Enter student's score: "))
+
+# Grading logic
+if 70 <= score <= 100:
+    print("Grade: A")
+elif 60 <= score <= 69:
+    print("Grade: B")
+elif 50 <= score <= 59:
+    print("Grade: C")
+elif 45 <= score <= 49:
+    print("Grade: D")
+elif 40 <= score <= 44:
+    print("Grade: E")
+elif 0 <= score < 40:
+    print("Grade: F")
+else:
+    print("Invalid score")
